@@ -67,7 +67,9 @@ class Owner
     @pets.each do |type, pets|
       type.mood= "nervous"
     end
+    pets.clear
   end
+  
 
   def list_pets
     fish_count = @pets[:fishes].count
