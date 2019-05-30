@@ -24,4 +24,10 @@ class Owner
   def self.reset_all
     @@all.clear
   end
+  
+  def buy_cat(name)
+    name = Cat.new(name)
+    @pets[cats] << name
+  end
+  
 end
