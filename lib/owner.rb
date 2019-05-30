@@ -64,14 +64,16 @@ class Owner
   end
   
   def sell_pets
-    
+    @pets.each do |type, pets|
+      pets.mood= "nervous"
+    end
   end
 
   def list_pets
     fish_count = @pets[:fishes].count
     dog_count = @pets[:dogs].count
     cat_count = @pets[:cats].count
-     "I have #{fish_count} fish, #{dog_count} dog(s), and #{cat_count} cat(s)."
+    "I have #{fish_count} fish, #{dog_count} dog(s), and #{cat_count} cat(s)."
   end
   
   
