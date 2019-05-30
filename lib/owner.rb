@@ -45,4 +45,14 @@ class Owner
     @pets[:fishes] << name
   end
   
+  def walk_dogs
+    @pets[:dogs].mood = "happy"
+  end
+  
+  def play_with_cats
+  end
+
+  def feed_fish
+  end
+  
 end
