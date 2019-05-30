@@ -50,9 +50,11 @@ class Owner
   end
   
   def play_with_cats
+    @pets[:cats].mood = "happy"
   end
 
   def feed_fish
+    @pets[:fishes].mood = "happy"
   end
   
 end
